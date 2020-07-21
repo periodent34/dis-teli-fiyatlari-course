@@ -1,0 +1,20 @@
+title: Diş Teli Fiyatları
+description: >-
+  <a href="https://www.periodent.net/dis-teli-fiyatlari/">Diş Teli Fiyatları</a>
+  ortodonti ile ilgili tüm bilgiler noktasında sizi bekliyoruz.<a
+  href="https://www.periodent.net/seffaf-dis-teli-fiyatlari/">şeffaf diş
+  teli</a>
+template:
+  repo: dis-teli-fiyatlari-template
+  name: dis-teli-fiyatlari
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
